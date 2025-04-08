@@ -151,7 +151,9 @@ h1, .h1{
 .fs-50{
     font-size: 50px;
 }
-
+.fs-60{
+    font-size: 60px;
+}
 
 
 
@@ -367,8 +369,58 @@ border-color: #c8c8c8;
 .footer-logo {
     text-align: right;
 }
+.inner-img img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 90% !important;
+    right: 5%;
+}
+.inner-img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    right: 0px;
+    top: 0;
+    background-color: #FF8800;
+}
+.inner-img {
+    height: 550px;
+}
+.abtinner-2 .inner-img::before {
+    right: auto;
+    left: 0;
+}
+.contact-detail {
+    height: 79%;
+}
+.contact-detail ul li::after {
+    content: '\f3c5';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 17px;
+    width: 17px;
+    font-family: "FontAwesome";
+    color: #FF8800;
+}
+.contact-detail ul li:nth-child(1)::after {
+    content: '\f3c5';
+}
+.contact-detail ul li:nth-child(2)::after {
+    content: '\f0e0';
 
+}
+.contact-detail ul li:nth-child(3)::after {
+    content: '\f095';
 
+}
+.form-control:focus {
+    border-color: #FF8800;
+    box-shadow: none;
+}
 @media(max-width:1400px){
     .navbar-nav .nav-link {
         font-size: 15px;
@@ -413,6 +465,12 @@ border-color: #c8c8c8;
     }
     .fs-13 {
         font-size: 10px;
+    }
+    .inner-img {
+        height: 350px;
+    }
+    .fs-60 {
+        font-size: 50px;
     }
 }
 
@@ -503,6 +561,12 @@ border-color: #c8c8c8;
     .services-sec {
         padding: 0 2%;
     }
+    .navbar-brand, .site-logo {
+        width: 150px;
+    }
+    .contact-detail {
+        height: auto;
+    }
 }
 
 @media(max-width:767px){
@@ -516,6 +580,18 @@ border-color: #c8c8c8;
         display: inline-block;
         width: 200px;
     }
+    .sub-banner-wrap {
+        height: 250px;
+    }
+    .abtfull-wrap {
+        height: 250px;
+    }
+    .fs-60 {
+        font-size: 40px;
+    }
+    .inner-img {
+        height: 300px;
+    }
 }
 @media(max-width:575px){
     .container{
@@ -527,5 +603,11 @@ border-color: #c8c8c8;
     }
     .footer-logo a, .navbar-brand, .site-logo {
         width: 150px;
+    }
+    .fs-60 {
+        font-size: 35px;
+    }
+    .inner-img {
+        height: 250px;
     }
 }
